@@ -1,19 +1,13 @@
-# FORKED & MODIFIED ARMBIAN BUILD REPOSITORY FOR BANANA PI
-
-
-Original Armbian-Build Repository: ['https://github.com/armbian/build'] (Armbian Build)
-Forked & Modified Armbian-Build Repository: ['https://github.com/bpi-codehunterz-world/build'] (BPI Armbian Build)
-
-
-```
-Name: ARMBIAN BUILD
-Author: hexzhen3x7
-Version: 0.1a
-Description: This forked repository is modified for building custom Armbian-Builds for Banana Pi Boards!"
-
-```
-
-
+<p align="center">
+  <a href="#build-framework">
+  <img src=".github/armbian-logo.png" alt="Armbian logo" width="144">
+  </a><br>
+  <strong>Armbian Linux Build Framework</strong><br>
+<br>
+<a href=https://github.com/armbian/build/graphs/contributors><img alt="GitHub contributors" src="https://img.shields.io/github/contributors-anon/armbian/build?logo=stackexchange&label=Contributors&style=for-the-badge&branch=main&logoColor=white"></a>
+<a href=https://github.com/armbian/os><img alt="Artifacts generation" src="https://img.shields.io/github/actions/workflow/status/armbian/os/complete-artifact-matrix-all.yml?logo=dependabot&label=CI%20Build&style=for-the-badge&branch=main&logoColor=white"></a>
+<a href=https://github.com/armbian/build/commits/main><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/armbian/build/main?logo=github&label=Last%20commit&style=f
+## What does this project do?
 
 - Builds custom **kernel**, **image** or a **distribution** optimized for low-resource hardware,
 - Include filesystem generation, low-level control software, kernel image and **bootloader** compilation,
@@ -57,9 +51,9 @@ Build minimal CLI Armbian Jammy for Bananapi M5 with LTS kernel:
 
 ```bash
 ./compile.sh \
-BOARD=bananapim2ultra \
+BOARD=bananapim5 \
 BRANCH=current \
-RELEASE=bullseye \
+RELEASE=jammy \
 BUILD_MINIMAL=yes \
 BUILD_DESKTOP=no \
 KERNEL_CONFIGURE=no
